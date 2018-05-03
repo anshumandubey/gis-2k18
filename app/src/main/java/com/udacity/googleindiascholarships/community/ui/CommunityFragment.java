@@ -1,7 +1,11 @@
 package com.udacity.googleindiascholarships.community.ui;
 
+import android.os.Build.VERSION;
+import android.os.Build.VERSION_CODES;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.annotation.RequiresApi;
+import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -20,6 +24,7 @@ public class CommunityFragment extends android.support.v4.app.Fragment{
 
     private ViewPager viewPager;
     private TabLayout tabLayout;
+    @RequiresApi(api = VERSION_CODES.LOLLIPOP)
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
